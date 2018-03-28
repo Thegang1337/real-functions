@@ -45,14 +45,6 @@ public class DefIntegralTest {
         Assert.assertEquals(expected, fi.calculate(inputFunction), 1E-6);
     }
 
-    @Test(expectedExceptions = ArgumentOutOfBoundException.class)
-    public void testArgumentOutOfBound() throws Exception {
-        IRealFunction inputFunction = new StraightLine(10, 12, 1, 2);
-        double inputA = 8;
-        double inputB = 12;
-        double expected = 39;
-        DefiniteIntegral fi = new DefiniteIntegral(inputA, inputB);
-        Assert.assertEquals(expected, fi.calculate(inputFunction), 1E-6);
-    }
+   
 
 }
